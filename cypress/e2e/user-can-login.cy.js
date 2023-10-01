@@ -74,5 +74,7 @@ describe("User can login to system", () => {
     cy.get(":nth-child(3) > .form-control").type("password");
     cy.get(".btn").click();
     //assert
+    // cy.get(":nth-child(2) > .form-control").should('have.class', ':invalid')
+    cy.get("input:invalid").should("have.length", 1);
   });
 });
