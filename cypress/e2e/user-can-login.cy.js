@@ -66,7 +66,7 @@ describe("User can login to system", () => {
     );
   });
 
-  it.only("user cannot login with invalid email in  username and valid password", () => {
+  it("user cannot login with invalid email in  username and valid password", () => {
     //arrange
     cy.visit("http://localhost:8000/");
     //act
